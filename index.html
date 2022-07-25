@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.2-rc.0/web3.min.js"
+      integrity="sha512-REWiGZVmhU2S5eIov/DuNrsq4djWnPaAHSvXrbLLLaI0r/gW+wh1utIzxt0iB4IQLgXhNDj5mR0YMBjrkKhVMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <p>Registration</p>
+    <label for="name">Name</label>
+    <input type="text" id="name" required />
+    <br />
+    <br />
+    <label for="Email">Email</label>
+    <input type="email" id="email" required />
+    <br />
+    <br />
+    <label for="password">Password</label>
+    <input
+      type="password"
+      id="password"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}"
+      required
+    />
+    <br />
+    <br />
+    <label for="confirm_password">Confirm Password</label>
+    <input
+      type="password"
+      id="confpass"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}"
+      required
+    />
+    <br />
+    <br />
+    <button type="button" onclick="registration()">Submission</button>
+    <br />
+    <br>
+    <p id="loginp"> Login </p>
+      <input type="text" id="login" placeholder="Email" />
+      <br>
+      <input type="password" id="loginPassword" placeholder="password" /><br />
+      <br>
+      <input type="button" id="loginBtn" />
+    <script src="assesment.js"></script>
+  </body>
+</html>
